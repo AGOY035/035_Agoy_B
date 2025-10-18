@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portofolio | Yoga Wahyu Prabowo</title>
+  <link rel="stylesheet" href="yoga 2.css">
+</head>
+<body>
+  <!-- ===== Header ===== -->
+  <header>
+    <h1>Yoga Wahyu Prabowo</h1>
+    <p>Mahasiswa Sistem Informasi | UI/UX Enthusiast</p>
+  </header>
+
+  <!-- ===== Navigasi ===== -->
+  <nav>
+    <a href="#about">Tentang</a>
+    <a href="#skills">Keahlian</a>
+    <a href="#projects">Proyek</a>
+    <a href="#contact">Kontak</a>
+  </nav>
+
+  <!-- ===== Konten Utama ===== -->
+  <main>
+    <section id="about" class="about">
+      <h2>Tentang Saya</h2>
+      <p>
+        Saya adalah mahasiswa Universitas Ahmad Dahlan pada Program Studi Sistem Informasi. 
+        Saya memiliki ketertarikan dalam dunia desain antarmuka (UI/UX) dan pengembangan website.
+      </p>
+    </section>
+
+    <section id="skills">
+      <h2>Keahlian</h2>
+      <div class="skills">
+        <span class="skill">HTML</span>
+        <span class="skill">CSS</span>
+        <span class="skill">UI/UX</span>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2>Proyek</h2>
+      <div class="projects">
+        <div class="project">
+          <img src="https://source.unsplash.com/400x200/?website" alt="Proyek Web">
+          <div class="project-content">
+            <h3>Website Portofolio</h3>
+            <p>Desain dan pengembangan website pribadi menggunakan HTML & CSS modern.</p>
+          </div>
+        </div>
+
+        <div class="project">
+          <img src="https://source.unsplash.com/400x200/?app,uiux" alt="Proyek Aplikasi">
+          <div class="project-content">
+            <h3>Desain UI Aplikasi</h3>
+            <p>Membuat prototipe aplikasi mobile menggunakan prinsip desain UI/UX yang baik.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Kontak</h2>
+      <form onsubmit="event.preventDefault(); alert('Pesan berhasil dikirim! (Demo)');">
+        <input type="text" placeholder="Nama Anda" required>
+        <input type="email" placeholder="Email Anda" required>
+        <textarea rows="4" placeholder="Tulis pesan..." required></textarea>
+        <button type="submit">Kirim Pesan</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer>
+    © <span id="year"></span> Yoga Wahyu Prabowo — Dibuat dengan semangat dan kopi ☕
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
